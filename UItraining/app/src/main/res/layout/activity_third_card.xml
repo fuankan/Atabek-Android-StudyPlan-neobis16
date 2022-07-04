@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_third_card"
+    android:orientation="vertical"
+    tools:context=".ThirdCardActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:alpha="0.4"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_happy_patient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:elevation="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:srcCompat="@drawable/dentist_photo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/open_sans_medium"
+                android:gravity="center"
+                android:text="Dr. Oleg Miami"
+                android:textColor="#1A82FC"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_circle_third_card"
+                android:src="@drawable/ic_text_third_card"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Text"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+                app:layout_constraintStart_toStartOf="@+id/imageButton2"
+                app:layout_constraintTop_toBottomOf="@id/imageButton2" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_circle_third_card"
+                android:src="@drawable/ic_baseline_call_24"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+                app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Call"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+                app:layout_constraintStart_toStartOf="@+id/imageButton3"
+                app:layout_constraintTop_toBottomOf="@id/imageButton3" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_circle_third_card"
+                android:src="@drawable/ic_mail_third_call"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Email"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+                app:layout_constraintStart_toStartOf="@+id/imageButton4"
+                app:layout_constraintTop_toBottomOf="@id/imageButton4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/qr_third_card"
+        app:layout_constraintBottom_toTopOf="@id/materialButton5"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Scan to Connect"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:fontFamily="@font/open_sans"
+        android:text="+996 (774) 678 876"
+        android:textColor="#1A82FC"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:fontFamily="@font/open_sans"
+        android:text="oleg.miami93@gmail.com"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/open_sans_medium"
+        android:gravity="start|center_vertical"
+        android:text="www.dental.com"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_web_third_card"
+        app:iconTint="@null"
+        app:layout_constraintBottom_toTopOf="@id/materialButton6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/open_sans_medium"
+        android:gravity="start|center_vertical"
+        android:text="Abdumomunova 146"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_place_third_card"
+        app:iconTint="@null"
+        app:layout_constraintBottom_toTopOf="@id/imageButton6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton5" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_circle_third_card"
+        android:src="@drawable/ic_telegram_third_card"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/imageButton6" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_circle_third_card"
+        android:src="@drawable/ic_facebook_third_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton6" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_circle_third_card"
+        android:src="@drawable/ic_whatsapp_third_card"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintTop_toTopOf="@+id/imageButton6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">UI-training</string>
+    <string name="dentist_name">Dr. Oleg Miami</string>
+
+    <string name="hyperlink"><a href="http://maps.google.com/maps?q=loc:42.871320945594185,74.60860650953485 (Neobis)">Open Map</a></string>
+</resources>
